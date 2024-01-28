@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="on2.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                ecommerce vendor validation  form
+            </h1>
+            <p id="description">
+            
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">what  is your name ?</label>
+              
+                <textarea name="name"  cols="10" rows="1"  id="name" class="textarea" placeholder="Enter your answer here..."></textarea>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for= "ques2">  what is your degree?</label>
+                <textarea name="ques2"  cols="10" rows="1"  id="ques2" class="textarea" placeholder="Enter your answer here..."></textarea>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="phone">what  are the certificates  do you have ? </label>
+                <textarea name="phone"  cols="10" rows="2"  id="phone" class="textarea" placeholder="Enter your answer here..."></textarea>
+                <div class="form-group">
+                    <label for="phone1"> what are  the acheivements in acheive in your  domain and how many years of experience ?</label> 
+                    <textarea name="phone1"  cols="10" rows="2"  id="phone1" class="textarea" placeholder="Enter your answer here..."></textarea>
+                
+                    <div class="form-group">
+                        <label for="phone2"> Enter your Adhar Card ? </label>
+                        <textarea name="phone1"  cols="10" rows="2"  id="phone2" class="textarea" placeholder="Enter your answer here..."></textarea>
+                    
+                    
+            
+            <!-- end of Number section -->
+
+            <!-- Type Number section -->
+           
+            <!--  end of number section -->
+
+            <!-- select section -->
+            <div class="form-group">
+                <p id="questt">age group?</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >12 to 24</option>
+                    <option value=" graduate"> 24 to 35</option>
+                    <option value="non graduate">35 to 50t</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- end of select section -->
+
+            <!-- radio button section -->
+            <div class="form-group">
+                <p id="que">Why do you want to sell  your products in this?</p>
+                <label for="">
+                    <input type="radio" name="source" value=" to practise "
+                    class="inputRadio"
+                    checked> parttime?
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputRadio"
+                    >  essential job for future
+                </label>
+                
+            </div>
+            <div class="form-group">
+                <p id="que">are you have the tech skills?</p>
+                <label for="">
+                    <input type="radio" name="source" value="freinds"
+                    class="inputRadio"
+                    checked> yes
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputRadio"
+                    >  no
+                </label>
+                
+            </div>
+            <!-- end of radio button -->
+
+           
+
+            <!-- Textarea section -->
+            <div class="form-group">
+                <p id="yuvt">Give us your feedback</p>
+                <textarea name="feedback"  cols="30" rows="3"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>
+          
+
+
+    <h2>File Upload</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="fileInput">Choose a file:</label>
+         <input type="file" id="fileInput" name="uploadedFile" accept=".pdf, .doc, .docx"  required>
+        <br><br>
+        <button type="submit"style="padding-left: 400px;color:green;text-align:center" >Upload the craftmark or AIACA certificate  </button>
+        
+    </div>
+
+</div>
+<div class="form-group">
+    <button type="submit" id="submit" class="btn"  onclick="f6()">Submit </button>
+</div>
+
+<!DOCTYPE html>
+<script>
+    
+    function f6(){
+          window.location="qr.html";
+          alert("you are  submitted sucessfully  the certificates");
+    }
+</script>
+</body>
+</html>

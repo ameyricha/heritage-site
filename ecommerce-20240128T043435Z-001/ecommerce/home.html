@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, , initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <title>School</title>
+  </head>
+  <body>
+    <!-- START NAVIGATION-->
+    <nav class="navbar">
+      <div class="fst_navDiv">
+        <a class="" href="home.html">Culture bazaar</a>
+        <span class=""> </span>
+      </div>
+
+      <div class="Snd_navDiv">
+        <ul class="">
+          <li class=""><a href="home.html" class="a_tag_elm"> Home</a></li>
+          <li class="">
+            <a onclick="document.location='#allcourses'" class="a_tag_elm"
+              >Cultural world</a
+            >
+          </li>
+          <li class="">
+            <a href="myprofile.html" class="a_tag_elm">My Profile</a>
+          </li>
+          <li class=""><a href="index.html" class="a_tag_elm">Logout</a></li>
+        </ul>
+      </div>
+
+      <div class="cart">
+        <a href="cart.html" class="a_tag_elm"
+          ><h2>Cart</h2>
+          <span id="cartSpan">0</span></a
+        >
+      </div>
+    </nav>
+    <!-- END NAVIGATION-->
+
+    <!-- video and text div -->
+    <div class="video_nd_txt_div">
+      <div class="video_div">
+        <video autoplay muted loop class="Bg_video" loop>
+          <source src="yuu.mp4" />
+        </video>
+      </div>
+
+      <div class="pink_color_div"></div>
+
+      <div class="txt_div">
+        <h1><b>Welcome to Culture bazaar<b></h1>
+<br>
+  <h3><b>Now you can  buy the cultural and traditional  products of India through online</b></h3>
+        
+
+      </div>
+    </div>
+    <!-- end video div-->
+
+    <!-- Courses info div -->
+    <div id="allcourses">
+      <h1 class="courseHeading">Explore the products you want to shop </h1>
+
+      <div class="courses">
+        <!-- ---------------------------- Carnatic -------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./images/et.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">cholapuri bags </h2>
+            <p class="courseDetails">
+             the cholapuri bags  are goregeous and give efficient ways    
+            </p>
+            <p class="coursePrice">₹78</p>
+          </div>
+          <button data-tag="img1" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- ----------------------------COOK-------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/tn2.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName"></h2>
+            <p class="courseDetails">
+             a weaven handicrafts are  very mangnificient products  ,which are longlasting  products to use
+            </p>
+            <p class="coursePrice">₹ 250</p>
+          </div>
+          <button data-tag="img2" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- ------------------------------mandana art-------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/tn1.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName"> tanjore dolls</h2>
+            <p class="courseDetails">
+              The   tanjore dolls are     type of  traditional  indian bobbehead  or roly  toy made  of terracota material 
+            </p>
+            <p class="coursePrice">₹ 400</p>
+            
+          </div>
+          <button data-tag="img3" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- ------------------------------lang-------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/Web1.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">Lightlamp</h2>
+            <p class="courseDetails">
+              lightlamps are the very  cheaper price .explore the wide range of decor lightning.
+            </p>
+            <p class="coursePrice">₹ 40</p>
+          </div>
+          <button data-tag="img4" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- --------------------------------craft--------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/l1.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">mats</h2>
+            <p class="courseDetails">
+              explore the trendy   range  of door mats  outside ,indoor  rubber mat etc.
+            </p>
+            <p class="coursePrice">₹ 200</p>
+          </div>
+          <button data-tag="img5" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- ------------------------------dance-------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/tn6.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName"> bags</h2>
+            <p class="courseDetails">
+            these   are  the handicrafts  bags
+            </p>
+            <p class="coursePrice">₹ 700</p>
+          </div>
+          <button data-tag="img6" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- --------------------------------React.Js--------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/y1.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName"> thalaiyatti pomai</h2>
+            <p class="courseDetails">
+               thalayati pomai's are  the special doll of  thanjore
+            </p>
+            <p class="coursePrice">₹ 49</p>
+            
+          </div>
+          <button data-tag="img7" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- --------------------------------yoga--------------------------------- -->
+       
+           
+      </div>
+    </div>
+
+    <!-- ------------------------Footer------------------------------- -->
+    <footer class="mainFooter homefooter">
+      <h4> A community that Helps  in selling  Culture and Heritage products  of India</h4>
+      
+      <ul>
+        <h6>Contact Us</h6>
+        <li class="footerLi"><i class="fab fa-facebook-square"></i></li>
+        <li class="footerLi"><i class="fab fa-twitter"></i></li>
+        <li class="footerLi"><i class="far fa-envelope"></i></li>
+      </ul>
+    </footer>
+
+    <script src="./CartJavascript/script.js"></script>
+    <script src="./CartJavascript/home.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

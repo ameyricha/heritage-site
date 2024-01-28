@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Certificate</title>
+    <!-- Adding a meta tag for character set and viewport settings -->
+</head>
+<body>
+    <div id="upload-container">
+        <!-- Container for the upload section -->
+        <label for="upload-input" id="upload-label">Choose Certificate</label>
+        <!-- Label element styled to look like a button -->
+        <input type="file" id="upload-input" accept=".pdf, .doc, .docx" />
+        <!-- Input element of type file, allowing users to choose a file with specific extensions -->
+        <div id="uploaded-file"></div>
+        <!-- Placeholder to display the name of the uploaded file -->
+    </div>
+
+    <script>
+        // JavaScript code will go here
+    </script>
+</body>
+</html>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f5f5f5;
+        /* Styling for the body, centering the content both horizontally and vertically */
+    }
+
+    #upload-container {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        /* Styling for the container holding the upload section */
+    }
+
+    #upload-input {
+        display: none;
+        /* Hiding the default file input */
+    }
+
+    #upload-label {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: inline-block;
+        /* Styling for the label to make it look like a button */
+    }
+
+    #uploaded-file {
+        margin-top: 20px;
+        font-weight: bold;
+        /* Styling for the placeholder to display the uploaded file name */
+    }
+</style>
+<script>
+    const uploadInput = document.getElementById('upload-input');
+    const uploadedFile = document.getElementById('uploaded-file');
+
+    uploadInput.addEventListener('change', handleFileUpload);
+
+    function handleFileUpload() {
+        const file = uploadInput.files[0];
+        if (file) {
+            // Display the uploaded file name
+            uploadedFile.textContent = 'Uploaded File: ' + file.name;
+        } else {
+            uploadedFile.textContent = '';
+        }
+        }
+</script>

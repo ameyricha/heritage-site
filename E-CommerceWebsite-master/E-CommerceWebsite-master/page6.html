@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .product-info {
+            text-align: center;
+        }
+
+        .product-description {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-price {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>COIMBATORE COTTON SAREE</h1>
+    </header>
+    <div class="container">
+        <img class="product-image" src="image6.jpg" alt="Product Image">
+        <div class="product-info">
+            <p class="product-description">Coimbatore cotton sarees are well known for their quality and durability. The cotton used to make these sarees is grown in the Coimbatore district of Tamil Nadu ..</p>
+            <p class="product-price">Rs.900</p>
+            <div class="btn-container">
+                <button class="btn" onclick="addToCart()">Add to Cart</button>
+                <button class="btn" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addToCart() {
+            alert('Product added to cart.');
+        }
+
+        function buyNow() {
+            alert('Product purchased. Thank you!');
+        }
+    </script>
+</body>
+</html>

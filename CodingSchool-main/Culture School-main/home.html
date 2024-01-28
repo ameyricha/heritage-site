@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, , initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <title>School</title>
+  </head>
+  <body>
+    <!-- START NAVIGATION-->
+    <nav class="navbar">
+      <div class="fst_navDiv">
+        <a class="" href="home.html">Culture Classes</a>
+        <span class=""> </span>
+      </div>
+
+      <div class="Snd_navDiv">
+        <ul class="">
+          <li class=""><a href="home.html" class="a_tag_elm"> Home</a></li>
+          <li class="">
+            <a onclick="document.location='#allcourses'" class="a_tag_elm"
+              >Courses</a
+            >
+          </li>
+          <li class="">
+            <a href="myprofile.html" class="a_tag_elm">My Profile</a>
+          </li>
+          <li class=""><a href="index.html" class="a_tag_elm">Logout</a></li>
+        </ul>
+      </div>
+
+      <div class="cart">
+        <a href="cart.html" class="a_tag_elm"
+          ><h2>Cart</h2>
+          <span id="cartSpan">0</span></a
+        >
+      </div>
+    </nav>
+    <!-- END NAVIGATION-->
+
+    <!-- video and text div -->
+    <div class="video_nd_txt_div">
+      <div class="video_div">
+        <video autoplay muted loop class="Bg_video" loop>
+          <source src="./video.mp4" />
+        </video>
+      </div>
+
+      <div class="pink_color_div"></div>
+
+      <div class="txt_div">
+        <h1>Welcome to Culture Classes</h1>
+<br>
+  <h3>Now you can learn the cultural and traditional skills of India through online</h3>
+        
+
+      </div>
+    </div>
+    <!-- end video div-->
+
+    <!-- Courses info div -->
+    <div id="allcourses">
+      <h1 class="courseHeading">Explore the Skills you want to Learn </h1>
+
+      <div class="courses">
+        <!-- ---------------------------- Carnatic -------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img1.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">CARNATIC MUSIC </h2>
+            <p class="courseDetails">
+              This course is designed by keeping in mind that anyone who would like to learn Carnatic Classical 
+music should find it easy with the help of a basic set of lessons..
+            </p>
+            <p class="coursePrice">₹ 1000</p>
+            <p class="courseTime">Total time <span>20 Hrs</span></p>
+          </div>
+          <button data-tag="img1" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- ----------------------------COOK-------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img2.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">INDIAN COOKING</h2>
+            <p class="courseDetails">
+             A treat for the foodies, we bring to you some of the best cooking classes in India. 
+Learn the preparation of Indian delicacies.
+            </p>
+            <p class="coursePrice">₹ 300</p>
+            <p class="courseTime">Total time <span>30 Hrs</span></p>
+          </div>
+          <button data-tag="img2" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- ------------------------------mandana art-------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img3.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName"> Art </h2>
+            <p class="courseDetails">
+              The painting classes, include an introduction to various mediums like acrylic, oil and watercolors, 
+            </p>
+            <p class="coursePrice">₹ 2000</p>
+            <p class="courseTime">Total time <span>30 Hrs</span></p>
+          </div>
+          <button data-tag="img3" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- ------------------------------lang-------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img4.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">Language</h2>
+            <p class="courseDetails">
+              At present if you are planning to study a second linguistic course, 
+           then you have made the right decision. Learn the  next new language with us.
+            </p>
+            <p class="coursePrice">₹ 4000</p>
+            <p class="courseTime">Total time <span>40 Hrs</span></p>
+          </div>
+          <button data-tag="img4" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- --------------------------------craft--------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img5.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">Craft</h2>
+            <p class="courseDetails">
+              Join us  art enthusiasts and  learn from  the Master Artists
+ who have been practicing these traditional arts of India for many generations.  
+            </p>
+            <p class="coursePrice">₹ 2000</p>
+            <p class="courseTime">Total time <span>30 Hrs</span></p>
+          </div>
+          <button data-tag="img5" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- ------------------------------dance-------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img6.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">Dance</h2>
+            <p class="courseDetails">
+            the art of semi classical dance . It’s a type of dance that has some similarities to classical
+ but also incorporates elements from modern and folk dances.
+            </p>
+            <p class="coursePrice">₹ 700</p>
+            <p class="courseTime">Total time <span>10 Hrs</span></p>
+          </div>
+          <button data-tag="img6" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- --------------------------------React.Js--------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img7.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">Hindustani vocal</h2>
+            <p class="courseDetails">
+              become expert on learning the Hindustani vocal and creating a memorable journey to find out what works best for you.
+            </p>
+            <p class="coursePrice">₹ 4999</p>
+            <p class="courseTime">Total time <span>40 Hrs</span></p>
+          </div>
+          <button data-tag="img7" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- --------------------------------yoga--------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img8.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">Yoga</h2>
+            <p class="courseDetails">
+             online yoga classes for members anywhere in the world , according to their convenient time.
+ Yoga for beginners at home with expert guidance.
+            </p>
+            <p class="coursePrice">₹ 3999</p>
+            <p class="courseTime">Total time <span>40 Hrs</span></p>
+          </div>
+          <button data-tag="img8" class="addtocartbtn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------Footer------------------------------- -->
+    <footer class="mainFooter homefooter">
+      <h4> A community that Helps  in learn Culture and Traditional skills of India</h4>
+      
+      <ul>
+        <h6>Contact Us</h6>
+        <li class="footerLi"><i class="fab fa-facebook-square"></i></li>
+        <li class="footerLi"><i class="fab fa-twitter"></i></li>
+        <li class="footerLi"><i class="far fa-envelope"></i></li>
+      </ul>
+    </footer>
+
+    <script src="./CartJavascript/script.js"></script>
+    <script src="./CartJavascript/home.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

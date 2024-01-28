@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Nadu Culture Chatbot</title>
+<center><b><h2>CHATBOT</h2></b></center>
+</head>
+
+<style>
+ body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('pecchat.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+</style>
+
+    <div id="chat-container">
+        <div id="chat-history"></div>
+        <select id="question-dropdown">
+            <option value="hello">Hello</option>
+            <option value="tell me about tamil nadu">Tell me about Tamil Nadu</option>
+            <option value="temples">Tell me about temples</option>
+            <option value="traditional music">Tell me about traditional music</option>
+            <option value="traditional dance">Tell me about traditional dance</option>
+            <!-- Additional Questions -->
+            <option value="cuisine">Tell me about Tamil Nadu cuisine</option>
+            <option value="festivals">What are some traditional festivals in Tamil Nadu?</option>
+            <option value="folk art">Tell me about folk art in Tamil Nadu</option>
+            <option value="language">What is the primary language spoken in Tamil Nadu?</option>
+            <option value="famous personalities">Who are some famous personalities from Tamil Nadu?</option>
+            <option value="literature">Tell me about Tamil literature</option>
+            <option value="architecture">What are some notable architectural marvels in Tamil Nadu?</option>
+            <option value="crafts">Tell me about traditional crafts in Tamil Nadu</option>
+            <option value="historical events">What are some significant historical events in Tamil Nadu?</option>
+            <option value="wildlife">Tell me about wildlife in Tamil Nadu</option>
+            <option value="dance forms">Apart from Bharatanatyam, what are other traditional dance forms?</option>
+            <option value="education">What is the state of education in Tamil Nadu?</option>
+            <option value="economy">Tell me about the economy of Tamil Nadu</option>
+            <option value="marriage customs">What are the traditional marriage customs in Tamil Nadu?</option>
+            <option value="sports">What are some popular sports in Tamil Nadu?</option>
+            <option value="film industry">Tell me about the Tamil film industry</option>
+            <option value="monuments">Name some historical monuments in Tamil Nadu</option>
+            <option value="literary figures">Who are some notable literary figures from Tamil Nadu?</option>
+        </select>
+        <button id="ask-button">Ask</button>
+    </div>
+
+    <script>
+        const chatContainer = document.getElementById('chat-container');
+        const chatHistory = document.getElementById('chat-history');
+        const questionDropdown = document.getElementById('question-dropdown');
+        const askButton = document.getElementById('ask-button');
+
+        const predefinedResponses = {
+            'hello': 'Hello! How can I help you explore Tamil Nadu culture and heritage?',
+            'tell me about tamil nadu': 'Tamil Nadu is known for its rich culture and heritage, including classical music, dance, architecture, and cuisine. What specific aspect are you interested in?',
+            'temples': 'Tamil Nadu is famous for its ancient temples, such as Meenakshi Amman Temple in Madurai and Brihadeeswarar Temple in Thanjavur.',
+            'traditional music': 'Carnatic music is a classical music form that originated in Tamil Nadu and is known for its intricate compositions and melodic richness.',
+            'traditional dance': 'Bharatanatyam is a classical dance form from Tamil Nadu, characterized by expressive hand gestures and intricate footwork.',
+            // Additional Responses
+            'cuisine': 'Tamil Nadu cuisine is diverse and known for its use of spices. Some popular dishes include dosa, idli, sambar, and Chettinad curries.',
+            'festivals': 'Pongal, Diwali, and Navaratri are some of the major festivals celebrated in Tamil Nadu with great enthusiasm.',
+            'folk art': 'Tamil Nadu is rich in folk art traditions, including Therukoothu, Karakattam, and Oyilattam.',
+            'language': 'Tamil is the primary language spoken in Tamil Nadu.',
+            'famous personalities': 'Prominent personalities from Tamil Nadu include M.S. Subbulakshmi, A.P.J. Abdul Kalam, and A.R. Rahman.',
+            'literature': 'Tamil literature has a rich history, with works like Thirukkural and Sangam poetry being significant contributions.',
+            'architecture': 'The state boasts architectural wonders like the Rameswaram Temple and Chola temples.',
+            'crafts': 'Traditional crafts in Tamil Nadu include Tanjore painting, Kanchipuram silk sarees, and stone carvings.',
+            'historical events': 'Significant historical events in Tamil Nadu include the Chola Dynasty rule and the Carnatic Wars.',
+            'wildlife': 'Tamil Nadu is home to diverse wildlife, including the Mudumalai National Park and the Gulf of Mannar Biosphere Reserve.',
+            'dance forms': 'Apart from Bharatanatyam, other traditional dance forms include Kuchipudi, Mohiniyattam, and Kathakali.',
+            'education': 'Tamil Nadu has a well-established education system with prestigious institutions like IIT Madras and Anna University.',
+            'economy': 'The state has a diverse economy with contributions from agriculture, manufacturing, and the services sector.',
+            'marriage customs': 'Traditional marriage customs in Tamil Nadu involve elaborate rituals and ceremonies.',
+            'sports': 'Cricket, kabaddi, and traditional sports like Jallikattu are popular in Tamil Nadu.',
+            'film industry': 'The Tamil film industry, known as Kollywood, produces a significant number of films each year.',
+            'monuments': 'Historical monuments in Tamil Nadu include the Mahabalipuram monuments and the Madurai Nayak Palace.',
+            'literary figures': 'Notable literary figures from Tamil Nadu include Subramania Bharati, Kalki Krishnamurthy, and Jayakanthan.'
+        };
+
+        function appendUserMessage(message) {
+            const userMessage = document.createElement('div');
+            userMessage.classList.add('user-message');
+            userMessage.innerText = 'You: ' + message;
+            chatHistory.appendChild(userMessage);
+        }
+
+        askButton.addEventListener('click', function() {
+            const selectedQuestion = questionDropdown.value;
+            const response = predefinedResponses[selectedQuestion] || 'I\'m sorry, I don\'t have information on that topic.';
+
+            appendUserMessage(selectedQuestion);
+           
+            const botMessage = document.createElement('div');
+            botMessage.classList.add('bot-message');
+            botMessage.innerText = 'Bot: ' + response;
+            chatHistory.appendChild(botMessage);
+        });
+    </script>
+</body>
+</html>
